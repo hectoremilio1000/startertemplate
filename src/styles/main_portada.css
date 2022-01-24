@@ -1,0 +1,65 @@
+.main_portada {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/54ec0fb3e4b0dc5d50410043/1570033430745-A7GH4HJH86GIPWSA5C2V/fotografia-arquitectura-interior-entrada-casa.jpg?format=2500w");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main_portada::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(21, 68, 162);
+  opacity: 0.89;
+  z-index: 1000;
+}
+.main_portada .text_portada {
+  width: 50%;
+  padding: 20px;
+  font-size: 18px;
+  position: relative;
+  z-index: 2000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.text_portada .button_w {
+  width: max-content !important;
+  padding: 10px 15px;
+  background: rgb(2, 162, 111);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.video_portada {
+  position: relative;
+  z-index: 2000;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.video_portada > video {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .text_portada {
+    width: 100% !important;
+    font-size: 14px;
+  }
+  .video_portada {
+    width: 100% !important;
+  }
+}

@@ -1,50 +1,28 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Portada from "./components/Portada";
+import { Empresa } from "./components/Settings";
+import { Colors_page } from "./components/Settings";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "./styles/header.css";
 
 export default function App() {
+  console.log(Empresa);
+  const logo = Empresa[0].route_logo;
+  const titulo_portada = Empresa[0].title_portada;
+  const descripcion_portada = Empresa[0].description_portada;
+  const video_portada = Empresa[0].video_portada;
+
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <div>
+      <Header logo={logo} />
+      <Portada
+        titulo_portada={titulo_portada}
+        descripcion_portada={descripcion_portada}
+        video_portada={video_portada}
+      />
+      <Footer logo={logo} />
+    </div>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
