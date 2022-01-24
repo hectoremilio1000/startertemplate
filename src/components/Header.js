@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 // import { Link } from "gatsby";
 import { FaBars } from "react-icons/fa";
-import { FaSprayCan } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-const Header = (props) => {
+const Header = props => {
   const { logo } = props;
   const [show_menu, setShow_menu] = useState(false);
   const menu_toggle = () => {
@@ -22,8 +21,10 @@ const Header = (props) => {
           <Link to="/" className="active" href="#home">
             home
           </Link>
-          <Link to="/Users">Reserva</Link>
-          <Link to="/About">Contacto</Link>
+
+          <a href="https://wa.me/+5219511028474">Reserva</a>
+
+          <a href="#contacto">Contacto</a>
         </nav>
         <div className="icons">
           <span className="block_icon">

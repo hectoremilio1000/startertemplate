@@ -4,10 +4,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "../styles/footer.css";
 
-import { FaSprayCan } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-const Footer = (props) => {
+const Footer = props => {
   const { logo } = props;
   return (
     <div className="footer content_box">
@@ -20,7 +19,9 @@ const Footer = (props) => {
           <p className="detail_footer">Servicio de desinfeccion a domicilio</p>
         </div>
         <div className="footer_box">
-          <p className="title_footer">Contacto</p>
+          <p className="title_footer" id="contacto">
+            Contacto
+          </p>
           <p className="detail_footer">
             <FaPhoneAlt /> +52 91562356898
           </p>

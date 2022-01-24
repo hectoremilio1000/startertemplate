@@ -3,7 +3,6 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Portada from "./components/Portada";
 import { Empresa } from "./components/Settings";
-import { Colors_page } from "./components/Settings";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./styles/header.css";
 
