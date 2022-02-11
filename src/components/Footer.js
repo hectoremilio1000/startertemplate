@@ -15,7 +15,7 @@ const Footer = props => {
         <img src={logo} alt="mi_logo" style={{ width: "200px" }} />
         <div className="footer_box">
           <p className="title_footer">Services</p>
-          <p className="detail_footer">Servicio de Sanitizacion</p>
+          <p className="detail_footer">Servicio de Sanitizacion final</p>
           <p className="detail_footer">Servicio de desinfeccion a domicilio</p>
         </div>
         <div className="footer_box">
