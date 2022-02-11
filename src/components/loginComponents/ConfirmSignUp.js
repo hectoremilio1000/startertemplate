@@ -7,7 +7,7 @@ function ConfirmSignUp(props) {
     <div style={styles.container}>
       <input
         name="confirmationCode"
-        placeholder="Confirmation Code"
+        placeholder="Confirmación Code"
         onChange={e => {
           e.persist();
           props.updateFormState(e);
