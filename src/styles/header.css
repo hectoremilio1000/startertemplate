@@ -16,7 +16,7 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: all 0.2s;
 }
 html {
@@ -30,7 +30,7 @@ html {
   width: 100%;
   padding: 120px 120px 0px 120px;
 }
-header {
+/* header {
   position: fixed;
   top: 0;
   left: 0;
@@ -43,7 +43,7 @@ header {
   z-index: 1000;
   box-shadow: var(--box-shadow);
   z-index: 3000;
-}
+} */
 header .logo {
   color: var(--black);
   font-size: 2.5rem;
@@ -126,7 +126,7 @@ header .icons #menu-bars {
   .icons a > p {
     display: none;
   }
-  header .navbar {
+  /* header .navbar {
     position: absolute;
     top: 100%;
     left: 0;
@@ -134,7 +134,7 @@ header .icons #menu-bars {
     background: #fff;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
+  } */
   header .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }

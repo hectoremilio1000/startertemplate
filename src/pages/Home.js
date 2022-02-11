@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../components/Header";
+// import Header from "../components/Header";
 import Portada from "../components/Portada";
 import Footer from "../components/Footer";
 import { Empresa } from "../components/Settings";
 
 function Home() {
-  console.log(Empresa);
+  // console.log(Empresa);
   const logo = Empresa[0].route_logo;
   const titulo_portada = Empresa[0].title_portada;
   const descripcion_portada = Empresa[0].description_portada;
@@ -13,7 +13,6 @@ function Home() {
 
   return (
     <div>
-      <Header logo={logo} />
       <Portada
         titulo_portada={titulo_portada}
         descripcion_portada={descripcion_portada}
